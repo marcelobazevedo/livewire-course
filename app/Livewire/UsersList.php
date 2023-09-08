@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\User;
+use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -15,10 +16,12 @@ class UsersList extends Component
     {
 
     }
+
     public function render()
     {
         return view('livewire.users-list',[
-            'users'=> User::latest()->paginate(3)
+            'users'=> User::latest()->paginate(100),
+            'count'=> User::count(),
         ]);
     }
 }

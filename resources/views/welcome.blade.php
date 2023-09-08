@@ -9,12 +9,12 @@
 </head>
 <body class="antialiased">
 <div class="flex">
-    <div class="w-2/4">
+{{--    <div class="w-2/4">--}}
         <livewire:users-list/>
-    </div>
-    <div class="w-2/4">
-        <livewire:clicker/>
-    </div>
+{{--    </div>--}}
+{{--    <div class="w-2/4">--}}
+{{--        <livewire:clicker/>--}}
+{{--    </div>--}}
 </div>
 </body>
 </html>

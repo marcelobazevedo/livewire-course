@@ -42,6 +42,10 @@ class Clicker extends Component
        $this->dispatch('user-created', $user);
     }
 
+    public function ReloadList()
+    {
+        $this->dispatch('user-created');
+    }
     public function render()
     {
         $users = User::paginate(5);
